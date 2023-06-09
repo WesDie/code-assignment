@@ -1,0 +1,115 @@
+/* Flex box assigment: */
+.containerFlexBox{
+    background-color: rgb(255, 255, 193);
+    margin: 20px;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+}
+
+.flexItem:nth-child(1){
+    background-color: rgb(193, 0, 252);
+    text-align: center;
+    flex: 1 1 auto;
+    color: rgb(255, 255, 255);
+}
+
+.flexItem:nth-child(2){
+    background-color: rgb(81, 255, 0);
+    text-align: center;
+    flex: 2 1 auto;
+    color: rgb(255, 255, 255);
+}
+
+.flexItem:nth-child(3){
+    background-color: rgb(255, 230, 0);
+    text-align: center;
+    flex: 1 1 auto;
+    color: rgb(255, 255, 255);
+}
+
+.flexItem:nth-child(4){
+    background-color: rgb(4, 0, 255);
+    text-align: center;
+    flex: 2 1 auto;
+    color: rgb(255, 255, 255);
+}
+
+.flexItem:nth-child(5){
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    flex: 1 1 auto;
+    color: rgb(255, 255, 255);
+}
+
+/* Grid assigment: */
+.containerGrid{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: auto;
+
+    background-color: rgb(255, 255, 193);
+    margin: 20px;
+    padding: 20px;
+    height: 150px;
+}
+
+.gridItem{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+}
+
+.gridItem div:nth-child(1){
+    width: auto;
+    height: auto;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.gridItem div p{
+    margin: 0;
+}
+
+.gridItem:nth-child(1) div{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.gridItem:nth-child(2) div{
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.gridItem:nth-child(3) div{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.gridItem:nth-child(4) div{
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.gridItem:nth-child(5) div{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+/* Javascript assigment: */
+.containerJavascript{
+    background-color: rgb(255, 255, 193);
+    margin: 20px;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+}
+
+.block{
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    display: flex;
+}
+
+.block p{
+    margin: auto;
+}
