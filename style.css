@@ -1,115 +1,66 @@
-/* Flex box assigment: */
-.containerFlexBox{
-    background-color: rgb(255, 255, 193);
-    margin: 20px;
-    padding: 20px;
-    gap: 10px;
+/* Flex box assigment 01: */
+#assignment-01{
     display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
 }
 
-.flexItem:nth-child(1){
-    background-color: rgb(193, 0, 252);
-    text-align: center;
-    flex: 1 1 auto;
-    color: rgb(255, 255, 255);
-}
-
-.flexItem:nth-child(2){
-    background-color: rgb(81, 255, 0);
-    text-align: center;
-    flex: 2 1 auto;
-    color: rgb(255, 255, 255);
-}
-
-.flexItem:nth-child(3){
-    background-color: rgb(255, 230, 0);
-    text-align: center;
-    flex: 1 1 auto;
-    color: rgb(255, 255, 255);
-}
-
-.flexItem:nth-child(4){
-    background-color: rgb(4, 0, 255);
-    text-align: center;
-    flex: 2 1 auto;
-    color: rgb(255, 255, 255);
-}
-
-.flexItem:nth-child(5){
+#assignment-01 div:nth-child(1){
     background-color: rgb(255, 0, 0);
-    text-align: center;
     flex: 1 1 auto;
-    color: rgb(255, 255, 255);
 }
 
-/* Grid assigment: */
-.containerGrid{
+#assignment-01 div:nth-child(2){
+    background-color: rgb(4, 0, 255);
+    flex: 2 1 auto;
+}
+
+#assignment-01 div:nth-child(3){
+    background-color: rgb(255, 230, 0);
+    flex: 1 1 auto;
+}
+
+#assignment-01 div:nth-child(4){
+    background-color: rgb(81, 255, 0);
+    flex: 2 1 auto;
+}
+
+#assignment-01 div:nth-child(5){
+    background-color: rgb(193, 0, 252);
+    flex: 1 1 auto;
+}
+
+/* Grid assigment 02: */
+#assignment-02{
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-template-rows: auto;
-
-    background-color: rgb(255, 255, 193);
-    margin: 20px;
-    padding: 20px;
-    height: 150px;
+}
+#assignment-02 div{
+    background-color: rgb(0, 0, 255);
+    margin-inline: auto;
 }
 
-.gridItem{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
+#assignment-02 div:nth-child(1){
+    grid-row: 1;
+    grid-column: 1;
 }
 
-.gridItem div:nth-child(1){
-    width: auto;
-    height: auto;
-    background-color: blue;
-    color: rgb(255, 255, 255);
-    text-align: center;
+#assignment-02 div:nth-child(2){
+    grid-row: 3;
+    grid-column: 2;
 }
 
-.gridItem div p{
-    margin: 0;
+#assignment-02 div:nth-child(3){
+    grid-row: 1;
+    grid-column: 3;
 }
 
-.gridItem:nth-child(1) div{
-    grid-area: 1 / 2 / 2 / 3;
+#assignment-02 div:nth-child(4){
+    grid-row: 3;
+    grid-column: 4;
 }
 
-.gridItem:nth-child(2) div{
-    grid-area: 3 / 2 / 4 / 3;
-}
-
-.gridItem:nth-child(3) div{
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-.gridItem:nth-child(4) div{
-    grid-area: 3 / 2 / 4 / 3;
-}
-
-.gridItem:nth-child(5) div{
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-/* Javascript assigment: */
-.containerJavascript{
-    background-color: rgb(255, 255, 193);
-    margin: 20px;
-    padding: 20px;
-    gap: 10px;
-    display: flex;
-}
-
-.block{
-    background-color: rgb(255, 0, 0);
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    color: white;
-    display: flex;
-}
-
-.block p{
-    margin: auto;
+#assignment-02 div:nth-child(5){
+    grid-row: 1;
+    grid-column: 5;
 }

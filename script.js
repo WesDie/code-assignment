@@ -1,4 +1,5 @@
 //assigment 03: javascript:
+document.querySelector("button").addEventListener("click", addDivBtn);
 
 let boxes = 0;
 
